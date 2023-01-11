@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_verify_background"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/buttonBack"
+        android:padding="4dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/verifyEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:background="@drawable/shape_edit_text"
+        android:drawableStart="@drawable/ic_verification"
+        android:drawablePadding="16dp"
+        android:fontFamily="@font/poppins"
+        android:hint="Verification code"
+        android:maxLength="20"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/progressCircular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+<!--    android:background="@drawable/shape_timer"-->
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:paddingTop="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:textColor="#DFE1EC"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@id/buttonVerify"
+        app:layout_constraintEnd_toEndOf="@+id/progressCircular"
+        app:layout_constraintStart_toStartOf="@+id/progressCircular"
+        app:layout_constraintTop_toBottomOf="@id/verifyEditText"
+        tools:text="12" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progressCircular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:max="61"
+        app:indicatorColor="@color/color_verify_progress"
+        app:indicatorDirectionCircular="counterclockwise"
+        app:indicatorSize="64dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonVerify"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verifyEditText"
+        app:trackColor="@color/color_verify_track"
+        app:trackThickness="4dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonVerify"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="#DE2C66"
+        android:fontFamily="@font/poppins_medium"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/text_verify_button"
+        android:textSize="14sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressCircular" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonResend"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="#DE2C66"
+        android:fontFamily="@font/poppins_medium"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/text_verify_resend"
+        android:textSize="14sp"
+        app:cornerRadius="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonVerify" />
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:progressTint="#00C853"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonVerify"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

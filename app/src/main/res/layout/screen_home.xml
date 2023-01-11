@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    style="@style/HomeRoot"
+    app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+    <androidx.constraintlayout.widget.ConstraintLayout style="@style/MatchParent">
+
+        <TextView
+            android:id="@+id/textAds"
+            style="@style/HomeTextTitle"
+            android:text="@string/text_home_ads"
+            app:layout_constraintBottom_toTopOf="@id/viewpagerAds"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewpagerAds"
+            style="@style/HomeViewpagerAds"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textAds" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutAds"
+            style="@style/HomeAdsTabLayout"
+            app:layout_constraintBottom_toBottomOf="@id/viewpagerAds"
+            app:layout_constraintEnd_toEndOf="@id/viewpagerAds"
+            app:layout_constraintStart_toStartOf="@id/viewpagerAds"
+            app:tabBackground="@drawable/selector_home_ads_tab"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp" />
+
+        <TextView
+            android:id="@+id/textFoodCategories"
+            style="@style/HomeTextTitle2"
+            android:text="@string/text_home_categories"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewpagerAds" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout"
+            style="@style/HomeSecondaryRoot"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textFoodCategories">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/categoriesAppBarLayout"
+                style="@style/HomeCategoriesToolbar"
+                app:layout_scrollFlags="enterAlways|scroll">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/listCategories"
+                    style="@style/HomeRecyclerViewCategories"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textFoodCategories"
+                    app:layout_scrollFlags="enterAlways|scroll"
+                    tools:listitem="@layout/item_category" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listFoodsOuter"
+                style="@style/HomeRecyclerViewFoods"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_food_outer" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

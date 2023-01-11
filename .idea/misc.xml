@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable-v24/shape_timer.xml" value="0.204" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_add.xml" value="0.204" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_back.xml" value="0.2045" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_calendar.xml" value="0.204" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_cart.xml" value="0.1995" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_close.xml" value="0.2045" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_delete.xml" value="0.204" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_discount.xml" value="0.205" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_edit.xml" value="0.204" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_error_image.xml" value="0.182" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_favourite.xml" value="0.1995" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_favourite_borderless.xml" value="0.204" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_gender_button.xml" value="0.204" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_home.xml" value="0.1995" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_home_selector.xml" value="0.14" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_intro1.xml" value="0.1995" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_intro2.xml" value="0.1995" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_intro3.xml" value="0.1995" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_keyboard_backspace.xml" value="0.2045" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_location.xml" value="0.204" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_logout.xml" value="0.204" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_men.xml" value="0.204" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_menu.xml" value="0.2045" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_minus.xml" value="0.204" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_notification.xml" value="0.1995" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_password.xml" value="0.204" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_person.xml" value="0.204" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_personal.xml" value="0.1995" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_phone.xml" value="0.204" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_placeholder.xml" value="0.182" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_search.xml" value="0.1995" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_search_placeholder.xml" value="0.2045" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_splash.xml" value="0.1995" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/ic_verification.xml" value="0.204" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/selector_account_tab.xml" value="0.204" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/selector_auth_tab.xml" value="0.204" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/selector_intro_tab.xml" value="0.1995" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/selector_item_categories.xml" value="0.2045" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/selector_item_category.xml" value="0.204" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/selector_main_ads_tab.xml" value="0.1995" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/selector_profiletab.xml" value="0.204" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/selector_tab_splash.xml" value="0.1995" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/shape_edit_text.xml" value="0.204" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/shape_edit_text_promo.xml" value="0.205" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/shape_food_overlay.xml" value="0.2045" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/shape_item_category.xml" value="0.2045" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/shape_item_category_checked.xml" value="0.2045" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/shape_item_category_clicked.xml" value="0.2045" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/shape_item_category_default.xml" value="0.2045" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/shape_profile_image.xml" value="0.204" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/shape_search.xml" value="0.2045" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/shape_sign_in_edit_text.xml" value="0.204" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/shape_sign_in_edit_text_cursor.xml" value="0.204" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/drawable/shape_toggle.xml" value="0.204" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/font/poppins_medium.xml" value="0.3672114402451481" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/item_ad.xml" value="0.3359375" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/item_ads.xml" value="0.33" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/item_cart.xml" value="0.33" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/item_cart_checkout.xml" value="0.5" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/item_category.xml" value="0.25" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/item_food.xml" value="0.3359375" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/item_food_all.xml" value="0.3359375" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/item_food_details.xml" value="0.3359375" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/item_food_inner.xml" value="0.18" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/item_food_outer.xml" value="0.2" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/item_header.xml" value="0.3359375" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/item_history.xml" value="0.33" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/item_intro.xml" value="0.3359375" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/item_search.xml" value="0.33" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/scree_sign_in.xml" value="0.3359375" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/screen_about.xml" value="0.3359375" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/screen_account.xml" value="0.3359375" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/screen_auth.xml" value="0.25" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/screen_cart.xml" value="0.3359375" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/screen_checkout.xml" value="0.2" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/screen_edit_profile.xml" value="0.30424528301886794" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/screen_favourite.xml" value="0.3359375" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/screen_food_category.xml" value="0.3359375" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/screen_food_detail.xml" value="0.33" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/screen_foods.xml" value="0.33" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/screen_foods_category.xml" value="0.3359375" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/screen_forgot_password.xml" value="0.3359375" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/screen_history.xml" value="0.3359375" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/screen_home.xml" value="0.2476905311778291" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/screen_intro.xml" value="0.22" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/screen_main.xml" value="0.42962962962962964" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/screen_profile.xml" value="0.33" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/screen_register.xml" value="0.33" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/screen_search.xml" value="0.25" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/screen_sign.xml" value="0.33" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/screen_sign_in.xml" value="0.3359375" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/screen_sign_in_forgot.xml" value="0.25" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/screen_splash.xml" value="0.22" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/layout/screen_verify.xml" value="0.25" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/menu/menu_bottom.xml" value="0.3359375" />
+        <entry key="..\:/2/projects/FoodDelivery/app/src/main/res/menu/menu_toolbar.xml" value="0.3359375" />
+      </map>
+    </option>
+  </component>
+  <component name="EntryPointsManager">
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="dagger.hilt.android.AndroidEntryPoint" />
+    </list>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

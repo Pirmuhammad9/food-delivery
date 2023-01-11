@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/FoodDetailRoot"
+    tools:context=".presentation.ui.FoodDetailScreen">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/buttonBack"
+        style="@style/FoodDetailBack"
+        android:src="@drawable/ic_back"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbarTitle" />
+
+    <TextView
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/toolbarTitle"
+        style="@style/FoodDetailToolbarTitle"
+        android:text="@string/text_food_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView2"
+        style="@style/FoodDetailScroll"
+        app:layout_constraintBottom_toTopOf="@id/buttonAddCart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarTitle">
+
+        <androidx.constraintlayout.widget.ConstraintLayout style="@style/MatchParent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/foodImage"
+                style="@style/FoodDetailImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize5Percent"
+                tools:src="@drawable/ic_intro1" />
+
+            <TextView
+                android:id="@+id/foodName"
+                style="@style/FoodDetailText"
+                app:layout_constraintEnd_toStartOf="@+id/foodPrice"
+                app:layout_constraintStart_toStartOf="@id/foodImage"
+                app:layout_constraintTop_toBottomOf="@id/foodImage"
+                tools:text="Thai beef fried rice" />
+
+            <TextView
+                android:id="@+id/foodPrice"
+                style="@style/FoodDetailTextPrice"
+                app:layout_constraintBottom_toBottomOf="@+id/foodName"
+                app:layout_constraintEnd_toEndOf="@id/foodImage"
+                app:layout_constraintStart_toEndOf="@id/foodName"
+                app:layout_constraintTop_toTopOf="@id/foodName"
+                tools:text="90$" />
+
+            <TextView
+                android:id="@+id/helperTextFoodDescriptions"
+                style="@style/FoodDetailTextHelperDescriptions"
+                android:text="@string/text_food_product_descriptions"
+                app:layout_constraintEnd_toEndOf="@id/foodPrice"
+                app:layout_constraintStart_toStartOf="@id/foodName"
+                app:layout_constraintTop_toBottomOf="@id/foodName" />
+
+            <TextView
+                android:id="@+id/foodDescription"
+                style="@style/FoodDetailTextDescription"
+                android:justificationMode="inter_word"
+                app:layout_constraintEnd_toEndOf="@id/foodImage"
+                app:layout_constraintStart_toStartOf="@id/helperTextFoodDescriptions"
+                app:layout_constraintTop_toBottomOf="@id/helperTextFoodDescriptions"
+                tools:maxLines="10"
+                tools:text="@tools:sample/lorem/random" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonAddCart"
+        style="@style/FoodDetailAdd"
+        android:text="@string/text_food_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

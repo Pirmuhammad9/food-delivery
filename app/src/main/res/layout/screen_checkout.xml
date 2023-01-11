@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#02061D"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/textCheckoutTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Checkout"
+        android:textColor="#CED4F6"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/buttonClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:padding="4dp"
+        android:src="@drawable/ic_close"
+        app:layout_constraintBottom_toBottomOf="@id/textCheckoutTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textCheckoutTitle"
+        app:tint="#DE2C66" />
+
+    <TextView
+        android:id="@+id/textShippingAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="SHIPPING ADDRESS"
+        android:textColor="#9FA2B1"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/textCheckoutTitle"
+        app:layout_constraintTop_toBottomOf="@id/textCheckoutTitle" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:visibility="gone"
+        android:id="@+id/buttonEditAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintBottom_toBottomOf="@id/textShippingAddress"
+        app:layout_constraintEnd_toEndOf="@id/buttonClose"
+        app:layout_constraintTop_toTopOf="@id/textShippingAddress" />
+
+    <TextView
+        android:id="@+id/textUserFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="#DFE1EC"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/textShippingAddress"
+        app:layout_constraintTop_toBottomOf="@id/textShippingAddress"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/textUserAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/poppins"
+        android:maxLines="2"
+        android:textColor="#9FA2B1"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/buttonEditAddress"
+        app:layout_constraintStart_toStartOf="@id/textUserFullName"
+        app:layout_constraintTop_toBottomOf="@id/textUserFullName"
+        tools:text="@tools:sample/lorem/random" />
+
+    <TextView
+        android:id="@+id/textItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="ITEMS"
+        android:textColor="#9FA2B1"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/textUserAddress"
+        app:layout_constraintTop_toBottomOf="@id/textUserAddress" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        tools:listitem="@layout/item_cart_checkout"
+        tools:itemCount="3"
+        android:id="@+id/listCart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="8dp"
+        app:layout_constraintBottom_toTopOf="@id/background"
+        app:layout_constraintTop_toBottomOf="@id/textItems" />
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        android:background="#141B40"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/promoEditText"
+        style="@style/CheckoutEditTextPromo"
+        android:layout_width="match_parent"
+        android:hint="@string/text_checkout_promo_code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/background" />
+
+    <TextView
+        android:id="@+id/textTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TOTAL"
+        android:textColor="#9FA2B1"
+        app:layout_constraintStart_toStartOf="@id/promoEditText"
+        app:layout_constraintTop_toBottomOf="@id/promoEditText" />
+
+    <TextView
+        android:id="@+id/textTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#DE2C66"
+        app:layout_constraintStart_toStartOf="@id/textTotal"
+        app:layout_constraintTop_toBottomOf="@id/textTotal"
+        tools:text="$ 115.00" />
+
+    <TextView
+        android:id="@+id/textHelperDelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delivery charge included"
+        android:textColor="#9FA2B1"
+        app:layout_constraintStart_toStartOf="@id/textTotalPrice"
+        app:layout_constraintTop_toBottomOf="@id/textTotalPrice" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonPlaceOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:cornerRadius="8dp"
+        android:backgroundTint="#DE2C66"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:text="place order"
+        app:layout_constraintBottom_toBottomOf="@id/textHelperDelivery"
+        app:layout_constraintEnd_toEndOf="@id/promoEditText"
+        app:layout_constraintTop_toTopOf="@id/textTotal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--ShapeAbleImageView-->
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize10Percent" parent="">
+        <item name="cornerSize">10%</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize5Percent" parent="">
+        <item name="cornerSize">5%</item>
+    </style>
+    <!---->
+
+    <!--Match Parent | Wrap Content | WidthMatchHeight0 | HeightMatchWidth0 | Height0Width0 |
+        WidthMatchHeightWrap | HeightMatchWidthWrap-->
+    <style name="MatchParent">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="WrapContent">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="WidthMatchHeight0">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="Height0Width0">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="WidthWrapHeight0">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="HeightWrapWidth0">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="HeightMatchWidthWrap">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="WidthMatchHeightWrap">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <!---->
+
+    <!--Item Intro-->
+    <style name="ItemIntroRoot" parent="MatchParent">
+        <item name="android:background">@color/color_intro_background</item>
+        <item name="android:padding">32dp</item>
+    </style>
+
+    <style name="ItemIntroTitle" parent="WrapContent">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/color_intro_title</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ItemIntroSubtitle" parent="ItemIntroTitle">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_intro_subtitle</item>
+    </style>
+
+    <style name="ItemIntroImage" parent="WrapContent">
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="ItemIntroDescription" parent="ItemIntroTitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_intro_description</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <!---->
+
+    <!--Item Ad-->
+    <style name="ItemAdImage" parent="MatchParent">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+    <!---->
+
+
+    <!--Item Category-->
+    <style name="ItemCategoryIcon">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="ItemCategoryRoot">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:background">@drawable/shape_item_category_default</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+    </style>
+
+    <style name="ItemCategoryName" parent="WrapContent">
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/color_item_category_text_name</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ItemCategoryItems" parent="ItemCategoryName">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:textColor">@color/color_item_category_text_items</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!---->
+
+    <!--Item Food All-->
+    <style name="ItemFoodAllRoot" parent="WidthMatchHeightWrap">
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ItemFoodAllImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">190dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="ItemFoodAllName" parent="WidthMatchHeightWrap">
+        <item name="android:textColor">@color/color_food_all_name</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!---->
+
+    <!--Item Food Inner-->
+    <style name="ItemFoodInnerRoot" parent="WidthMatchHeightWrap">
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ItemFoodInnerImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">135dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="ItemFoodInnerName" parent="WidthMatchHeightWrap">
+        <item name="android:textColor">@color/color_food_inner_name</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!---->
+
+    <!--Item Food Outer-->
+    <style name="ItemFoodOuterRoot" parent="WidthMatchHeightWrap">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="ItemFoodOuterCategory" parent="WidthWrapHeight0">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/color_food_outer_category</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ItemFoodOuterViewAll" parent="WrapContent">
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:gravity">end</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@color/color_food_outer_view_all</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="ItemFoodOuterInnerList" parent="WidthMatchHeightWrap">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">0dp</item>
+    </style>
+    <!---->
+
+    <!--Item Search-->
+    <style name="ItemSearchRoot">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <style name="ItemSearchImage">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="ItemSearchName" parent="HeightWrapWidth0">
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">#DFE1EC</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ItemSearchPrice" parent="WrapContent">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">#DFE1EC</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!---->
+
+    <!--Activity Main-->
+    <style name="ActivityMainRoot" parent="MatchParent">
+        <item name="android:background">@color/color_main_background</item>
+        <item name="android:name">androidx.navigation.fragment.NavHostFragment</item>
+    </style>
+    <!---->
+
+    <!--Splash Screen-->
+    <style name="SplashRoot" parent="MatchParent">
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/color_splash_background</item>
+    </style>
+
+    <style name="SplashText" parent="WrapContent">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_splash_text_purple</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+    <!---->
+
+    <!--Intro Screen-->
+    <style name="IntroRoot" parent="MatchParent">
+        <item name="android:background">@color/color_intro_background</item>
+    </style>
+
+    <style name="IntroNext" parent="WrapContent">
+        <item name="android:padding">8dp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_intro_next</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginEnd">32dp</item>
+    </style>
+
+    <style name="IntroTabLayout" parent="WidthWrapHeight0">
+        <item name="android:layout_marginBottom">32dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <!---->
+
+    <!--Main Screen-->
+    <style name="MainRoot" parent="MatchParent">
+        <item name="android:background">@color/color_main_background</item>
+    </style>
+
+    <style name="MainToolbar">
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">24dp</item>
+    </style>
+
+    <style name="MainToolbarTitle" parent="WrapContent">
+        <item name="android:textColor">@color/color_main_toolbar_title</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="MainBottomNavigationView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?actionBarSize</item>
+        <item name="android:background">@color/color_main_bottom_navigation</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+    <!---->
+
+    <!--Home Screen-->
+    <style name="HomeRoot" parent="MatchParent">
+        <item name="android:background">@color/color_home_background</item>
+    </style>
+
+    <style name="HomeSecondaryRoot" parent="WidthMatchHeightWrap">
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="HomeTextTitle" parent="WrapContent">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/color_home_text_title</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="HomeTextTitle2" parent="HomeTextTitle">
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="HomeViewpagerAds">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">128dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="HomeAdsTabLayout" parent="WrapContent">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="HomeCategoriesToolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="HomeRecyclerViewCategories">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="HomeRecyclerViewFoods" parent="WidthMatchHeightWrap">
+        <item name="android:layout_marginTop">50dp</item>
+    </style>
+    <!---->
+
+    <!--Food Screen-->
+    <style name="FoodDetailRoot">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/color_food_background</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="FoodDetailBack">
+        <item name="android:layout_marginStart">32dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="FoodDetailToolbar" parent="MainToolbar">
+        <item name="android:layout_height">24dp</item>
+    </style>
+
+    <style name="FoodDetailToolbarTitle" parent="MainToolbarTitle" />
+
+    <style name="FoodDetailImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">210dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="FoodDetailText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">@color/color_food_text_default</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="FoodDetailTextPrice" parent="FoodDetailText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_food_text_red</item>
+    </style>
+
+    <style name="FoodDetailTextHelperDescriptions" parent="FoodDetailText">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="FoodDetailTextDescription" parent="FoodDetailText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:textColor">@color/color_food_text_description</item>
+    </style>
+
+    <style name="FoodDetailScroll">
+        <item name="android:paddingTop">16sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+
+    <style name="FoodDetailAdd">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:backgroundTint">#DE2C66</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <!---->
+
+    <!--Search Screen-->
+    <style name="SearchRoot">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/color_search_background</item>
+    </style>
+
+    <style name="SearchNoResult">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/color_search_text_no_result</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="SearchPlaceholder">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="SearchList">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:paddingTop">16dp</item>
+    </style>
+    <!---->
+
+    <!--Auth Screen-->
+    <style name="AuthToolbar" parent="MainToolbar">
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_marginTop">32dp</item>
+    </style>
+    <!---->
+
+    <!--Register Screen-->
+    <style name="RegisterRoot">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/color_register_background</item>
+    </style>
+
+    <style name="RegisterSubRoot">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:paddingStart">24dp</item>
+    </style>
+
+    <style name="RegisterTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/color_register_text_title</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="RegisterEditTextFirstname">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:background">@drawable/shape_edit_text</item>
+        <item name="android:drawableStart">@drawable/ic_person</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:textCursorDrawable">@drawable/shape_edit_text_cursor</item>
+    </style>
+
+    <style name="RegisterEditTextLastname" parent="RegisterEditTextFirstname">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:maxLength">20</item>
+    </style>
+
+    <style name="RegisterEditTextPhone" parent="RegisterEditTextFirstname">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:maxLength">13</item>
+        <item name="android:inputType">phone</item>
+        <item name="android:drawableStart">@drawable/ic_phone</item>
+    </style>
+
+    <style name="RegisterEditTextPassword" parent="RegisterEditTextFirstname">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:inputType">textVisiblePassword</item>
+        <item name="android:drawableStart">@drawable/ic_password</item>
+    </style>
+
+    <style name="RegisterButton">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:backgroundTint">@color/color_register_button_login</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!---->
+
+    <!--Sign In Screen-->
+    <style name="SignInRoot">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/color_sign_in_background</item>
+    </style>
+
+    <style name="SingInSubRoot">
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="SignInTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/color_sign_in_text_title</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="SignInEditTextPhone">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:background">@drawable/shape_edit_text</item>
+        <item name="android:drawableStart">@drawable/ic_phone</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:inputType">phone</item>
+        <item name="android:maxLength">13</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:textCursorDrawable">@drawable/shape_edit_text_cursor</item>
+    </style>
+
+    <style name="SignInForgotRoot" parent="WidthMatchHeightWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/color_register_background</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:paddingStart">24dp</item>
+    </style>
+
+    <style name="SignInEditTextPassword" parent="SignInEditTextPhone">
+        <item name="android:drawableStart">@drawable/ic_password</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:inputType">textVisiblePassword</item>
+    </style>
+
+    <style name="SignInForgotText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@color/color_sign_in_forgot_password</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="SignInButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:backgroundTint">@color/color_sign_in_button_login</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!---->
+
+    <!--Sign In Forgot-->
+    <style name="SignInForgotEditTextPhone" parent="RegisterEditTextFirstname">
+        <item name="android:drawableStart">@drawable/ic_phone</item>
+    </style>
+
+    <style name="SignInForgotEditTextPassword" parent="SignInEditTextPhone">
+        <item name="android:inputType">text</item>
+        <item name="android:drawableStart">@drawable/ic_password</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="SignInForgotTitle" parent="WrapContent">
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/color_register_text_title</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="SignInForgotButton">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:backgroundTint">@color/color_register_button_login</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!---->
+
+    <!--Edit Profile-->
+    <style name="EditProfileRoot">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/color_edit_profile_background</item>
+    </style>
+
+    <style name="EditProfileToolbar" parent="MainToolbar">
+        <item name="android:layout_height">24dp</item>
+    </style>
+    <!---->
+
+    <!--Checkout-->
+    <style name="CheckoutEditTextPromo">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/shape_edit_text_promo</item>
+        <item name="android:drawableStart">@drawable/ic_discount</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">6</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:textCursorDrawable">@drawable/shape_edit_text_cursor</item>
+    </style>
+
+</resources>

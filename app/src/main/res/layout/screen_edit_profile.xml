@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/EditProfileRoot">
+
+    <androidx.constraintlayout.widget.ConstraintLayout style="@style/MatchParent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/text_edit_profile_title"
+            android:textColor="#7F8398"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_marginStart="32dp"
+            android:padding="4dp"
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textTitle" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/userFirstname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/shape_edit_text"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/text_hint_firstname"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textCursorDrawable="@drawable/shape_edit_text_cursor"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textTitle" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/userLastname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/shape_edit_text"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/text_hint_lastname"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textCursorDrawable="@drawable/shape_edit_text_cursor"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userFirstname" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/userLocation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/shape_edit_text"
+            android:drawableStart="@drawable/ic_location"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/text_hint_location"
+            android:inputType="text"
+            android:maxLength="30"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textCursorDrawable="@drawable/shape_edit_text_cursor"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userLastname" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/user_date_of_birth"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/shape_edit_text"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_calendar"
+            android:drawablePadding="16dp"
+            android:enabled="true"
+            android:focusable="false"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/text_hint_date_birth"
+            android:inputType="text"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textCursorDrawable="@drawable/shape_edit_text_cursor"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userLocation" />
+
+        <androidx.appcompat.widget.AppCompatToggleButton
+            android:id="@+id/buttonGender"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/shape_toggle"
+            android:drawableStart="@drawable/ic_gender_button"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:paddingEnd="16dp"
+            android:textColor="@color/color_toggle_text"
+            android:textOff="@string/text_hint_male"
+            android:textOn="@string/text_hint_female"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/user_date_of_birth" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSubmit"
+            style="@style/RegisterButton"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/text_edit_profile_submit"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonGender" />
+
+        <!--<androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonLogin">
+
+            <TextView
+                android:id="@+id/textUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="@string/text_register_old_user"
+                android:textColor="@color/color_sing_in_new_user"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/buttonSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/text_register_sign_in"
+                android:textColor="@color/color_sing_in_signup" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

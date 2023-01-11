@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--Theme-->
+    <color name="color_theme_action_bar">#02061D</color>
+    <color name="color_theme_status_bar">#02061D</color>
+    <color name="color_snack_default">#02061D</color>
+    <color name="color_snack_error">#df2b67</color>
+    <color name="color_snack_action">#02061D</color>
+    <color name="color_secondary">#dfe0ec</color>
+    <color name="color_hint_text">#9FA2B1</color>
+    <color name="color_edit_text">#dfe0ec</color>
+    <color name="color_edit_text_background">#141B40</color>
+    <color name="color_toggle_background">#141B40</color>
+    <color name="color_toggle_text">#dfe0ec</color>
+    <color name="color_progress">#DE2C66</color>
+    <!---->
+
+    <!--Icon-->
+    <color name="color_icon_menu_selected">#df2b67</color>
+    <color name="color_icon_menu_default">#dfe0ec</color>
+    <color name="color_icon_menu_notification">#7F8398</color>
+    <color name="color_icon_default_red">#df2b67</color>
+    <color name="color_icon_placeholder_white">#dfe0ec</color>
+    <color name="color_icon_phone">#DFE1EC</color>
+    <color name="color_icon_plus_minus">#DFE1EC</color>
+    <color name="color_icon_default">#9FA2B1</color>
+    <color name="color_icon_person">#dfe0ec</color>
+    <!---->
+
+    <!--Item Category-->
+    <color name="color_item_category_checked">#4C5581</color>
+    <color name="color_item_category_default">#141B40</color>
+    <color name="color_item_category_text_name">#DFE1EC</color>
+    <color name="color_item_category_text_items">#9FA2B1</color>
+    <!---->
+
+    <!--Item Food All-->
+    <color name="color_food_all_name">#DFE1EC</color>
+    <!---->
+
+    <!--Item Food Inner-->
+    <color name="color_food_inner_name">#DFE1EC</color>
+    <!---->
+
+    <!--Item Food Outer-->
+    <color name="color_food_outer_category">#CED4F6</color>
+    <color name="color_food_outer_view_all">#DE2C66</color>
+    <!---->
+
+    <!--Splash Screen-->
+    <color name="color_splash_background">#02061D</color>
+    <color name="color_splash_text_purple">#DE2C66</color>
+    <!---->
+
+    <!--Intro Screen-->
+    <color name="color_intro_background">#02061D</color>
+    <color name="color_intro_title">#DFE1EC</color>
+    <color name="color_intro_subtitle">#CED4F6</color>
+    <color name="color_intro_description">#9FA2B1</color>
+    <color name="color_intro_skip">#9FA2B1</color>
+    <color name="color_intro_next">#DE2C66</color>
+    <color name="color_intro_tab_selected">#DE2C66</color>
+    <color name="color_intro_tab_default">#33DE2C66</color>
+    <!---->
+
+    <!--Main Screen-->
+    <color name="color_main_background">#02061D</color>
+    <color name="color_main_toolbar_title">#7F8398</color>
+    <color name="color_main_bottom_navigation">#141B40</color>
+    <!---->
+
+    <!--Home Screen-->
+    <color name="color_home_background">#02061D</color>
+    <color name="color_home_text_title">#CED4F6</color>
+    <!---->
+
+    <!--Food Screen-->
+    <color name="color_food_background">#02061D</color>
+    <color name="color_food_text_default">#DFE1EC</color>
+    <color name="color_food_text_red">#DE2C66</color>
+    <color name="color_food_text_description">#9FA2B1</color>
+    <!---->
+
+    <!--Search Screen-->
+    <color name="color_search_background">#02061D</color>
+    <color name="color_search_text_title">#CED4F6</color>
+    <color name="color_search_text_no_result">#CED4F6</color>
+    <color name="color_search_shape">#141B40</color>
+    <!---->
+
+    <!--Auth Screen-->
+    <color name="color_auth_background">#02061D</color>
+    <color name="color_auth_tab_selected">#DE2C66</color>
+    <color name="color_auth_tab_default">#D3DFEF</color>
+    <!---->
+
+    <!--Sign In Screen-->
+    <color name="color_sign_in_background">#02061D</color>
+    <color name="color_sign_in_cursor">#DE2C66</color>
+    <color name="color_sign_in_text_title">#DFE1EC</color>
+    <color name="color_sign_in_remember_me">#9FA2B1</color>
+    <color name="color_sign_in_forgot_password">#DE2C66</color>
+    <color name="color_sign_in_button_login">#DE2C66</color>
+    <color name="color_sign_in_new_user">#CED4F6</color>
+    <color name="color_sign_in_signup">#DE2C66</color>
+
+    <!---->
+
+    <!--Register Screen-->
+    <color name="color_register_background">#02061D</color>
+    <color name="color_register_text_title">#DFE1EC</color>
+    <color name="color_register_remember_me">#9FA2B1</color>
+    <color name="color_register_button_login">#DE2C66</color>
+    <!---->
+
+    <!--Verify Screen-->
+    <color name="color_verify_background">#02061D</color>
+    <color name="color_verify_progress">#70FF16</color>
+    <color name="color_verify_track">#40FFFFFF</color>
+    <color name="color_verify_timer">#2E313C</color>
+    <!---->
+
+    <!--Cart Screen-->
+    <color name="color_cart_background">#02061D</color>
+    <!---->
+
+    <!--Profile Screen-->
+    <color name="color_profile_background">#02061D</color>
+    <color name="color_profile_image">#00B8D4</color>
+    <color name="color_profile_tab_selected">#DE2C66</color>
+    <color name="color_profile_tab_default">#D3DFEF</color>
+    <!---->
+
+    <color name="color_about_background">#02061D</color>
+    <color name="color_history_background">#02061D</color>
+
+    <color name="color_edit_profile_background">#02061D</color>
+
+</resources>

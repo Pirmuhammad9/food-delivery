@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ItemFoodInnerRoot">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/foodImage"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize5Percent"
+        tools:src="@drawable/ic_intro3"
+        style="@style/ItemFoodInnerImage" />
+
+    <TextView
+        android:id="@+id/foodName"
+        tools:text="@tools:sample/full_names"
+        style="@style/ItemFoodInnerName" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

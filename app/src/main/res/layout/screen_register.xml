@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RegisterRoot">
+
+    <androidx.constraintlayout.widget.ConstraintLayout style="@style/RegisterSubRoot">
+
+        <TextView
+            android:id="@+id/textTitle"
+            style="@style/RegisterTitle"
+            android:text="@string/text_auth_create_account"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/userFirstname"
+            style="@style/RegisterEditTextFirstname"
+            android:hint="@string/text_hint_firstname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textTitle" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/userLastname"
+            style="@style/RegisterEditTextLastname"
+            android:hint="@string/text_hint_lastname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userFirstname" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/phoneNumber"
+            android:hint="@string/text_auth_phone"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userLastname"
+            style="@style/RegisterEditTextPhone" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/password"
+            android:hint="@string/text_auth_password"
+            android:fontFamily="@font/poppins"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/RegisterEditTextPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/phoneNumber" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/confirm_password"
+            android:hint="@string/text_auth_confirm_password"
+            android:fontFamily="@font/poppins"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/RegisterEditTextPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/buttonRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/text_auth_remember_me"
+            android:textColor="@color/color_sign_in_remember_me"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/confirm_password"
+            app:layout_constraintTop_toBottomOf="@id/confirm_password" />
+
+        <com.google.android.material.button.MaterialButton
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cornerRadius="8dp"
+            android:id="@+id/buttonRegister"
+            android:text="@string/text_auth_register"
+            app:layout_constraintTop_toBottomOf="@id/buttonRememberMe"
+            style="@style/RegisterButton" />
+
+        <androidx.core.widget.ContentLoadingProgressBar
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:progressTint="#00C853"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonRegister"
+            tools:visibility="visible" />
+
+        <!--<androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonLogin">
+
+            <TextView
+                android:id="@+id/textUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="@string/text_register_old_user"
+                android:textColor="@color/color_sing_in_new_user"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/buttonSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/text_register_sign_in"
+                android:textColor="@color/color_sing_in_signup" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

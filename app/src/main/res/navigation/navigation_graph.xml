@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph.xml"
+    app:startDestination="@id/splashScreen">
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="uz.gita.fooddelivery.presentation.ui.SplashScreen"
+        android:label="screen_splash"
+        tools:layout="@layout/screen_splash" >
+        <action
+            android:id="@+id/action_splashScreen_to_introScreen"
+            app:destination="@id/introScreen"
+            app:enterAnim="@anim/anim_slide_to_right"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashScreen_to_authScreen"
+            app:destination="@id/authScreen"
+            app:enterAnim="@anim/anim_slide_to_right"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashScreen_to_mainScreen"
+            app:destination="@id/mainScreen"
+            app:enterAnim="@anim/anim_slide_to_right"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/introScreen"
+        android:name="uz.gita.fooddelivery.presentation.ui.IntroScreen"
+        android:label="screen_intro"
+        tools:layout="@layout/screen_intro" >
+        <action
+            android:id="@+id/action_introScreen_to_authScreen"
+            app:destination="@id/authScreen"
+            app:enterAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/introScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="uz.gita.fooddelivery.presentation.ui.MainScreen"
+        android:label="screen_main"
+        tools:layout="@layout/screen_main" >
+        <action
+            android:id="@+id/action_mainScreen_to_foodDetailScreen"
+            app:destination="@id/foodDetailScreen"
+            app:enterAnim="@anim/anim_slide_in_up"
+            app:popExitAnim="@anim/anim_slide_in_down"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_mainScreen_to_authScreen"
+            app:destination="@id/authScreen"
+            app:enterAnim="@anim/anim_slide_in_up"
+            app:popUpTo="@id/mainScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_mainScreen_to_profileEditScreen"
+            app:destination="@id/profileEditScreen"
+            app:enterAnim="@anim/anim_slide_in_up"
+            app:popExitAnim="@anim/anim_slide_in_down" />
+        <action
+            android:id="@+id/action_mainScreen_to_checkoutScreen"
+            app:destination="@id/checkoutScreen"
+            app:enterAnim="@anim/anim_slide_in_up"
+            app:popExitAnim="@anim/anim_slide_in_down" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodDetailScreen"
+        android:name="uz.gita.fooddelivery.presentation.ui.FoodDetailScreen"
+        android:label="screen_food_detail"
+        tools:layout="@layout/screen_food_detail" >
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <argument
+            android:name="foodPrice"
+            app:argType="integer" />
+        <argument
+            app:nullable="true"
+            android:name="foodImage"
+            app:argType="string" />
+        <argument
+            android:name="foodName"
+            app:argType="string" />
+        <argument
+            android:name="foodDescription"
+            app:argType="string" />
+
+
+    </fragment>
+    <fragment
+        tools:layout="@layout/screen_auth"
+        android:id="@+id/authScreen"
+        android:name="uz.gita.fooddelivery.presentation.ui.AuthScreen"
+        android:label="AuthScreen" >
+        <action
+            android:id="@+id/action_authScreen_to_verifyScreen"
+            app:destination="@id/verifyScreen"
+            app:enterAnim="@anim/anim_slide_to_right"
+            app:popExitAnim="@anim/anim_slide_to_left" />
+        <action
+            android:id="@+id/action_authScreen_to_mainScreen"
+            app:destination="@id/mainScreen"
+            app:enterAnim="@anim/anim_slide_in_down"
+            app:popUpTo="@id/authScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_authScreen_to_signInForgotScreen"
+            app:destination="@id/signInForgotScreen"
+            app:enterAnim="@anim/anim_slide_in_up"
+            app:popExitAnim="@anim/anim_slide_in_down" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/screen_verify"
+        android:id="@+id/verifyScreen"
+        android:name="uz.gita.fooddelivery.presentation.ui.VerifyScreen"
+        android:label="VerifyScreen" >
+        <action
+            android:id="@+id/action_verifyScreen_to_mainScreen"
+            app:destination="@id/mainScreen"
+            app:enterAnim="@anim/anim_slide_in_down"
+            app:popUpTo="@id/verifyScreen"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="firstname"
+            app:argType="string" />
+        <argument
+            android:name="lastname"
+            app:argType="string" />
+        <argument
+            android:name="phone"
+            app:argType="string" />
+        <argument
+            android:name="password"
+            app:argType="string" />
+        <argument
+            android:name="isRemember"
+            app:argType="boolean" />
+        <argument
+            android:name="verificationId"
+            app:argType="string" />
+        <argument
+            android:name="isNewUser"
+            app:argType="boolean"
+            />
+        <action
+            android:id="@+id/action_verifyScreen_to_authScreen"
+            app:destination="@id/authScreen"
+            app:enterAnim="@anim/anim_slide_to_left"
+            app:popUpTo="@id/verifyScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/screen_edit_profile"
+        android:id="@+id/profileEditScreen"
+        android:name="uz.gita.fooddelivery.presentation.ui.ProfileEditScreen"
+        android:label="ProfileEditScreen" >
+    </fragment>
+    <fragment
+        tools:layout="@layout/screen_sign_in_forgot"
+        android:id="@+id/signInForgotScreen"
+        android:name="uz.gita.fooddelivery.presentation.ui.SignInForgotScreen"
+        android:label="SignInForgotScreen" >
+        <action
+            android:id="@+id/action_signInForgotScreen_to_verifyScreen"
+            app:destination="@id/verifyScreen"
+            app:enterAnim="@anim/anim_slide_to_right"
+            app:popExitAnim="@anim/anim_slide_to_left" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/screen_checkout"
+        android:id="@+id/checkoutScreen"
+        android:name="uz.gita.fooddelivery.presentation.ui.CheckoutScreen"
+        android:label="CheckoutScreen" />
+</navigation>

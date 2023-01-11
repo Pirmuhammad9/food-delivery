@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">Food Delivery</string>
+
+    <string name="text_splash">Food Delivery</string>
+
+    <string name="text_food_outer_view_all">View All</string>
+
+    <string name="text_menu_home">Home</string>
+    <string name="text_menu_favourites">Favourites</string>
+    <string name="text_menu_search">Search</string>
+    <string name="text_menu_cart">My Cart</string>
+    <string name="text_menu_profile">Profile</string>
+    <string name="text_menu_notification">Notification</string>
+
+    <string name="text_hint_firstname">Firstname</string>
+    <string name="text_hint_lastname">Lastname</string>
+    <string name="text_hint_country">Country</string>
+    <string name="text_hint_city">City</string>
+    <string name="text_hint_male">Male</string>
+    <string name="text_hint_female">Female</string>
+    <string name="text_hint_date_birth">Date of Birth</string>
+    <string name="text_hint_location">Location</string>
+
+    <string name="text_error_firstname">Firstname is empty</string>
+    <string name="text_error_lastname">Lastname is empty</string>
+    <string name="text_error_phone">Phone number is incorrect\nExample: +998901234567</string>
+    <string name="text_error_password">Password is empty</string>
+    <string name="text_error_user_available">User is already registered</string>
+    <string name="text_error_confirm_password">Confirm Password is empty</string>
+    <string name="text_error_confirm_password_not_matches">Confirmation Password is not matches Password</string>
+    <string name="text_error_location">Location is empty</string>
+    <string name="text_error_country">Country is empty</string>
+    <string name="text_error_city">City is empty</string>
+
+    <string name="text_intro_title1">Create an account</string>
+    <string name="text_intro_title2">Log in to your account</string>
+    <string name="text_intro_title3">Enjoy our service</string>
+    <string name="text_intro_subtitle1">Fresh Food</string>
+    <string name="text_intro_subtitle2">Fast Delivery</string>
+    <string name="text_intro_subtitle3">Easy Payment</string>
+    <string name="text_intro_description1">In particular, the garbled words of bear an unmistakable.</string>
+    <string name="text_intro_description2">In particular, the garbled words of bear an unmistakable.</string>
+    <string name="text_intro_description3">In particular, the garbled words of bear an unmistakable.</string>
+    <string name="text_intro_next">Next</string>
+    <string name="text_intro_start">Start</string>
+
+    <string name="text_auth_login_account">Log in to your account</string>
+    <string name="text_auth_phone">Phone</string>
+    <string name="text_auth_password">Password</string>
+    <string name="text_auth_confirm_password">Confirm Password</string>
+    <string name="text_auth_new_password">New Password</string>
+    <string name="text_auth_new_password_confirm">Confirm New Password</string>
+    <string name="text_auth_remember_me">Remember me</string>
+    <string name="text_auth_forgot_password">Forgot password?</string>
+    <string name="text_auth_login">login</string>
+    <string name="text_auth_new_user">New user?</string>
+    <string name="text_auth_signup">Signup</string>
+    <string name="text_auth_create_account">Create an account</string>
+    <string name="text_auth_old_user">Already have an account?</string>
+    <string name="text_auth_sign_in">Sign in</string>
+    <string name="text_auth_restore">Restore</string>
+    <string name="text_auth_register">register</string>
+    <string name="text_auth_restore_title">Restore password</string>
+
+    <string name="text_verify_time_over">Back</string>
+    <string name="text_verify_invalid_code">The verification code entered was invalid</string>
+    <string name="text_verify_count_down_timer">%1$d</string>
+    <string name="text_verify_button">verify</string>
+    <string name="text_verify_resend">resend verification code</string>
+
+    <string name="text_main_exit_text">Press back button again to exit</string>
+    <string name="text_main_sign_out_action">Sign Out</string>
+    <string name="text_main_sign_out_message">Are you sure you want to Sign Out?</string>
+
+    <string name="text_home_ads">Ads</string>
+    <string name="text_home_categories">Food Categories</string>
+    <string name="text_home_category_items_count">%1$d Items</string>
+
+    <string name="text_food_toolbar">Food details</string>
+    <string name="text_food_product_descriptions">Product Descriptions</string>
+    <string name="text_food_button">add to cart</string>
+    <string name="text_food_detail_price">$ %1$d</string>
+
+    <string name="text_search_view_query">Search…</string>
+    <string name="text_search_food_price">$ %1$d</string>
+    <string name="text_search_no_result">No result found</string>
+
+    <string name="text_cart_price">Price:</string>
+    <string name="text_cart_food_price">$ %1$d</string>
+    <string name="text_cart_food_pieces">%1$d</string>
+
+    <string name="text_profile_image_text">%1$s%2$s</string>
+    <string name="text_profile_full_name">%1$s, %2$s</string>
+    <string name="text_profile_phone">%1$s</string>
+
+    <string name="text_edit_profile_title">Edit Profile</string>
+    <string name="text_edit_profile_submit">submit</string>
+    <string name="text_profile_no_data">No Data</string>
+    <string name="text_cart_food_delete_text">Would you like to delete?</string>
+    <string name="text_cart_food_delete">Delete</string>
+
+    <string name="text_checkout_promo_code">Add Promo Code: MB123456</string>
+    <string name="text_checkout_food_pieces">Pieces: %1$d</string>
+    <string name="text_checkout_food_price">$ %1$d</string>
+
+</resources>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "813784606316",
+    "project_id": "fooddelivery-m",
+    "storage_bucket": "fooddelivery-m.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813784606316:android:34a447f644c45c9e425a49",
+        "android_client_info": {
+          "package_name": "uz.gita.fooddeliveryMBF"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "813784606316-5fomvq14hi5qfmk7qbst0u1gmm11u4ja.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "uz.gita.fooddeliveryMBF",
+            "certificate_hash": "2beca6b19ea374ceb22f7770ba1f376721803a7f"
+          }
+        },
+        {
+          "client_id": "813784606316-sehatrc93qhftc1i3edktfdus1butfpq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUW2tjwivoy2o2xZIBAtejkunG01ExszQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "813784606316-sehatrc93qhftc1i3edktfdus1butfpq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
